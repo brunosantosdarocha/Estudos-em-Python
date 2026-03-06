@@ -1,0 +1,10 @@
+#Desafio em py.
+# Quantos dias dura um produto se o usuario usar X vezes o produto ao dia.
+#Convertendo o resultado no print para int
+
+produto = int(input("Digite a quantidade do produto"))
+qtd_dia = int(input("Quanto do produto  por dia você usa?"))
+duracao = (produto / qtd_dia)
+print(f" O produto ira durar {duracao} dias")   # aqui o resultado sairia como float ex: 60.0
+print(f" O Produto ira durar {duracao:.0f}")   # determnino aqui que quero '0' casas decimais
+print(f" O Produto ira durar {int(duracao)}")   #Aqui converto a variavel dentro do print para INT
