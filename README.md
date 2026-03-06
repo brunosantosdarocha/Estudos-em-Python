@@ -1,1 +1,1 @@
-Primeira linha de codigo em PY.
+Exercicios de estudo em Python
