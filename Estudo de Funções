@@ -1,0 +1,24 @@
+#Funções
+# Um bloco de codigo que pode ser usado varias vezes se chamado.
+def saudacao(nome):
+  print(f"Bom dia {nome}")
+
+saudacao("Bruno")
+saudacao("Joao");
+
+def nomes(nome1,nome2,nome3,nome4):
+    print(f"A lista de usuarios é: {nome1}, {nome2}, {nome3}, {nome4}")
+
+nomes("Bruno", "Joao", "Pedro", "Jose")
+
+
+def somar(num1, num2):
+  print(f'A soma dos numeros é de: {num1 + num2}')
+
+somar(10,20);
+
+
+def calc_desconto(preco, desconto):
+  print(f"O preço do produ to é de R%{preco - preco * desconto /100}")
+
+  calc_desconto(100,10)
