@@ -1,0 +1,31 @@
+class Casa:
+  def __init__(self,cor,quartos):
+    self.cor = cor
+    self.quartos = quartos  # Adicionado: inicializa o atributo 'quartos'
+  def mostrar_cor(self):
+    print(f"A cor da casa é {self.cor}")
+  def mostrar_quartos(self):
+    print(f"Esta casa tem {self.quartos} quartos")
+
+
+
+casa1 = Casa("azul", 4)
+
+casa2 = Casa("vermelha",6)
+
+casa3 = Casa("amarela",3)
+
+print("\nCasa2:")
+casa2.mostrar_cor()
+print("\nCasa1:")
+casa1.mostrar_cor()
+print("\nCasa3:")
+casa3.mostrar_cor()
+
+
+print("\nQuantidade de quartos:")
+casa1.mostrar_quartos()
+print("\nQuantidade de quartos:")
+casa2.mostrar_quartos()
+print("\nQuantidade de quartos:")
+casa3.mostrar_quartos()
