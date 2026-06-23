@@ -1,0 +1,49 @@
+#Dicionario1
+import getpass as gpass
+
+Senha = {
+    'Bruno': 'admin1234',
+    'Joao': 'abc1234',
+    'Pedro': 'aeiou1234'
+    }
+print("A senha de Bruno é: ", Senha['Bruno'])
+print("A senha do Joao é: ",Senha['Joao'])
+print("A senha do Pedro é :",Senha['Pedro'])
+
+
+    
+  #  print(f'Usuario:{keys}\nSenha: {values}') #print(keys,values)
+
+
+print("Digite seu usuario e senha para proseguir")
+
+usuario = input("Digite seu usuario: ")
+#Subistirui o input pelo getpass para esconder a senha ao digitar.
+senha = gpass.getpass("Digite sua senha: ")
+def trocar_senha():
+    Senha[usuario] = input("Digite sua nova senha:")
+    print("Senha trocada com sucesso")
+    print("A senha de Bruno é: ", Senha['Bruno'])
+  
+
+
+
+#para todas as chaves e valores contidos em no dicionario Senha:
+for keys, values in Senha.items():
+    #Se o usuario digitado estiver em keys do dicionario 'Senha' e a senha digitada estiver atribuida ao usuario em values
+    if usuario in keys and Senha[usuario] == values:
+        print("Acesso permitido")
+        trocaSenha = input("Deseja trocar a senha? (S/N)")
+        if trocaSenha == 'S':
+            trocar_senha()
+
+# Se o usuario que vc digitou estiver em no dicionario 'Senha' e a senha estiver atribuida ao usuario [usuario]
+#if usuario in Senha and Senha[usuario] == senha:
+ #   print("Acesso permitido")
+ #   trocaSenha = input("Deseja trocar a senha? (S/N)")
+ #   if trocaSenha == 'S':
+  #      trocar_senha()
+else:
+    print("Acesso negado")
+
+
