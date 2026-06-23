@@ -1,0 +1,29 @@
+#dicionario2
+
+#Criando dicionário
+
+Senha = {
+    'Bruno': 'admin1234',
+    'Joao': 'abc1234',
+    'Pedro': 'aeiou1234'
+    }
+#Adicionando um novo item ao dicionario
+Senha.update({'Kely': 'admin1234'})
+#Deletar item do dicionario
+del Senha['Bruno']
+
+
+#Printa todo conteudo do dicionario Senha
+print(Senha)
+#Printa o valor atribuido ao usuario Bruno
+print(Senha.get('Bruno'))
+#Printa o tamanho do valor atribuido ao usuario Bruno
+print(len(Senha['Bruno']))
+#Printa o tamanho do dicionario
+print(len(Senha))
+#Printa as chaves do dicionario
+print(Senha.keys())
+#Printa os valores do dicionario
+print(Senha.values())
+#Printa todos os itens do dicionário
+print(Senha.items())
