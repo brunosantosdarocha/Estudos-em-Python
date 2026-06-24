@@ -1,0 +1,30 @@
+#Mapeamento - Usando uma def para todos os itens de uma lista
+
+#Declarando lista
+lista = [2,4,6]
+
+#Declarando a função que multiplica por 2
+def mult(x):
+     return x * 2
+    
+#Mapeamento
+#Declaro uma variavel para armazenar o mapeamento
+
+#(mapear(funcao de multiplicar x, Lista)
+operação = (map(mult, lista))
+#printo a operação convertida em uma lista(list)
+print (list(operação))
+
+
+numeros = [2, 4, 6, 8, 10]
+
+dicionario = {'a': 1, 'b': 2, 'c': 3}
+def dobrar(x):  
+    return (f'O Dobro de {x} é: {x*2}')
+
+operacao1 = map(dobrar,numeros)
+#Exemplo com values de um dicionário
+operacao2 =map(dobrar,dicionario.values())
+print(list(operacao1))
+#printando mapeamento dos valores do dicionario
+print(list(operacao2))
