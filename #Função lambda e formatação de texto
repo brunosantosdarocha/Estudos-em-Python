@@ -1,0 +1,32 @@
+#Função lambda e formatação de texto
+
+#Crio uma função para somar 2 numeros e retorno a soma de a + b
+def somar(a, b):
+    return a + b
+#Aqui printei a função somar e passei 10 e 20 como parametro
+print(somar(10, 20))
+
+
+#Aqui substitui por uma lambda function
+#Atribui a lambda a uma variavel
+#Passei argumentos(a,b)
+#e declarei a expressao que quero usar (a+b)
+soma = lambda a, b: a + b
+#Printei a função lambda com os valores para os argumentos que escolhi.
+print(soma(10, 20))
+
+
+#Colocando a função lambda dentro de uma funçãoy
+def mult(x, y):
+    #Colcando função lambda dentro de uma função
+    soma = lambda x,y: x * y
+
+    return soma(x,y)
+print(mult(10, 20))
+
+
+
+nome = 'bruno rocha'
+print(nome.upper()) #Passa tudo para MAIÚSCULO
+print(nome.title()) #Primeira letra de cada palavra p maiusculo
+print(nome.capitalize()) #Primeira letra do texto p maiúsculo.
